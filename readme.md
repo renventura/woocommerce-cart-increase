@@ -13,7 +13,11 @@ This project is for my application to become a Codeable Expert.
 
 After you've installed and activated the plugin, you can configure a global % increase for products that are configured to increase the cart total. This can be done by navigating to the WooCommerce Settings &rarr; Products tab &rarr; General section.
 
+![WooCommerce Cart Increase - Global Setting](https://renventura.com/wp-content/uploads/2018/05/woocommerce-cart-increase-global-setting.jpg "WooCommerce Cart Increase - Global Setting")
+
 Next, you can begin configuring products that will increase the cart total by a given percentage when added to the cart. To do this, navigate to the editor for one of your products. In the Product Data meta box, under the General tab, you'll find an option for enabling the increase for that product, and an input for the percentage.
+
+![WooCommerce Cart Increase - Product Settings](https://renventura.com/wp-content/uploads/2018/05/woocommerce-cart-increase-product-settings.jpg "WooCommerce Cart Increase - Product Settings")
 
 Remember that for both the global and product settings, percentages are expressed as whole numbers, and should not include the percent sign. For example, a 25% increase would be entered as just 25.
 
