@@ -171,10 +171,12 @@ class WooCommerce_Cart_Increase {
 	 * 
 	 * @return mixed - False if product is not configured to add a cart increase; Else percentage of cart increase, expressed as a whole number
 	 */
-	public static function get_product_cart_increase( int $product_id ) {
+	public static function get_product_cart_increase( $product_id ) {
+
+		$product = (int) $product_id;
 
 		// Bail if product is not configured to add a cart increase
-		if ( ! get_post_meta( $product_id, '_enable_cart_increase', true ) ) {
+		if ( get_post_type( $product_id ) !== 'product' || ! get_post_meta( $product_id, '_enable_cart_increase', true ) ) {
 			return false;
 		}
 
